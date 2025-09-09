@@ -1,0 +1,134 @@
+/* Author: Mr.ABDELHAK | Custom styles for recipe project */
+/* 
+  CSS Root Variables for Recipe Page
+  ----------------------------------
+  This section defines color variables for use throughout the site.
+*/
+
+:root {
+  --clr-bg: #f3e5d8;
+  /* General background color */
+  --clr-white: #ffffff;
+  /* Card background color */
+  --clr-title: #302d2c;
+  /* Main title color */
+  --clr-text: #5f564d;
+  /* Body text color */
+  --clr-subtitle: #854632;
+  /* Section subtitle color (e.g., Ingredients, Instructions, Nutrition) */
+  --clr-prep-bg: #fff0fa;
+  /* Preparation time box background color */
+  --clr-prep-text: #7b284f;
+  /* Preparation time text color */
+  --clr-hr: #e0e0e0;
+  /* Horizontal rule color */
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-bg);
+  display: grid;
+  place-items: center; 
+  height: 200vh;   
+}
+.card {
+  background-color: var(--clr-white);
+  display: grid;
+  width: 50%;
+  min-width: 360px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.card .first-part img {
+  width: 100%;
+  min-width: 320px;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+}
+.card .first-part h1 {
+  color: var(--clr-title);
+}
+.card .first-part p {
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card .second-part .prep-time {
+  background-color: var(--clr-prep-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+.card .second-part .prep-time h3 {
+  color: var(--clr-prep-text);
+  font-weight: bold;
+  margin: 0;
+  font-size: 25px;
+
+}
+.card .second-part .ingredients h3 {
+  color: var(--clr-subtitle);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.card .second-part .ingredients ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.card .second-part .ingredients ul li {
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-hr);
+  margin: 20px 0;
+}
+.card .second-part .instructions h3 {
+  color: var(--clr-subtitle);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.card .second-part .instructions ol {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.card .second-part .instructions ol li {
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.card .second-part .nutrition h3 {
+  color: var(--clr-subtitle);
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.card .second-part .nutrition p {
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.card .second-part .nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.card .second-part .nutrition table td {
+  padding: 8px 0;
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--clr-hr);
+}
+@media (max-width: 500px) {
+  .card {
+    width: 98%;
+    padding: 30px;
+  }
+  body {
+    height: 150vh; 
+  }
+}
+/* Author: Mr.ABDELHAK | Custom styles for recipe project */
